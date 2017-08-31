@@ -1,0 +1,7 @@
+# ansible
+
+необходимо определить переменные
+ansible_ssh_user
+ansible_ssh_pass
+tomcat_admin_username
+tomcat_admin_password
