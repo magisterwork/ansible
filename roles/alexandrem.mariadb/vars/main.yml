@@ -1,0 +1,22 @@
+---
+# file: mariadb/vars/main.yml
+
+## ROLE PARAMETERS ##
+
+# {install, reset_root_password}
+do: install
+
+# True to install mysql conf file
+mariadb_configure: True
+
+
+## BELOW ARE OVERRIDEN PER DISTRO ##
+
+# Packages to install
+mariadb_packages: []
+
+mariadb_service_name:
+
+mariadb_cnf_path:
+
+mariadb_sock_file:

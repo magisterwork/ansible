@@ -1,0 +1,14 @@
+---
+machine:
+  services:
+    - docker
+dependencies:
+  pre:
+    - docker info
+    - docker version
+test:
+  override:
+    - docker run -t -v $(pwd):/ansible -w /ansible stackio/ansible-centos6 ./tests/test.sh -r 5
+    - docker run -t -v $(pwd):/ansible -w /ansible stackio/ansible-centos6 ./tests/test.sh -r 10
+    - docker run -t -v $(pwd):/ansible -w /ansible stackio/ansible-centos7 ./tests/test.sh -r 5
+    - docker run -t -v $(pwd):/ansible -w /ansible stackio/ansible-centos7 ./tests/test.sh -r 10

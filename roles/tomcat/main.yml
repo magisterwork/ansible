@@ -1,0 +1,4 @@
+---
+vars:
+  tomcat_admin_username: admin
+  tomcat_admin_password: tomcatadmin

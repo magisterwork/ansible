@@ -1,0 +1,12 @@
+# file: mariadb/vars/debian/defaults.yml
+
+mariadb_packages:
+  - mysql-server
+  - mysql-client
+  - python-mysqldb
+
+mariadb_service_name: mariadb
+
+mariadb_cnf_path: /etc/mysql/my.cnf
+
+mariadb_sock_file: /var/run/mysqld/mysqld.sock

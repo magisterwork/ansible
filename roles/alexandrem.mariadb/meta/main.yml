@@ -1,0 +1,16 @@
+# file: mariadb/meta/main.yml
+
+galaxy_info:
+  author: Alexandre Mclean
+  description: "MariaDB server role"
+  min_ansible_version: 1.9
+  license: MIT
+  platforms:
+    - name: EL
+      versions:
+        - 6
+        - 7
+  categories:
+    - database
+
+dependencies: []

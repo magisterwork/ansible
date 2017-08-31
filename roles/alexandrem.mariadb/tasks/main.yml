@@ -1,0 +1,14 @@
+---
+# file: mariadb/tasks/main.yml
+
+- include: vars.yml
+
+- include: install.yml
+  when: do == 'install'
+
+- include: secure/initialize_root.yml
+  when: do == 'reset_root_password'
+
+- include: databases.yml
+
+- include: users.yml
